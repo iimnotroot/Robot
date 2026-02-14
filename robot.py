@@ -18,6 +18,6 @@ class Robot:
         self.dict_headers = dict(self.request.getheaders())
 
     def show(self) -> None:
-        print(f"Headers for: {self.url}:")
+        print(f"Headers for {self.url}:")
         for k,v in self.dict_headers.items():
             print(f"{k}: {v}")
